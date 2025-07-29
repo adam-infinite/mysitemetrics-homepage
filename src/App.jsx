@@ -18,8 +18,6 @@ function App() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-              <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">Pricing</a>
-              <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
               <a 
                 href={import.meta.env.VITE_DASHBOARD_URL || "https://your-dashboard.vercel.app"} 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
@@ -39,12 +37,12 @@ function App() {
               <span className="text-gray-900">
                 Transform Your
               </span>
-              <br />
+                
+
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">Website Analytics</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Beautiful, real-time analytics dashboards that turn your Google Analytics data into actionable insights. 
-              Perfect for agencies and businesses who want to impress their clients.
+              Beautiful, real-time analytics dashboards that give you the insight you need to succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
@@ -111,11 +109,11 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Everything you need to
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> succeed</span>
+              Metrics made
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> meaningful</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Powerful analytics tools designed for modern businesses and agencies
+              Powerful analytics tools designed for modern businesses to take action
             </p>
           </div>
 
@@ -135,10 +133,9 @@ function App() {
               <div className="p-4 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl w-fit mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Client Dashboards</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Custom Dashboards</h3>
               <p className="text-gray-600 leading-relaxed">
-                Beautiful, branded dashboards that your clients will love. 
-                Each client gets their own secure login with customized analytics views.
+                Beautiful, custom dashboards with customized analytics that show the current state of your website.
               </p>
             </div>
 
@@ -148,15 +145,14 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">GA4 Integration</h3>
               <p className="text-gray-600 leading-relaxed">
-                Seamlessly connects with Google Analytics 4 to pull your existing data 
-                and present it in stunning, easy-to-understand visualizations.
+                Seamlessly connects with Google Analytics 4 to pull in your existing data and present it in stunning, easy-to-understand visualizations.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Dashboard Preview */}
+      {/* Dashboard Preview - Hidden for now
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -221,28 +217,25 @@ function App() {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to transform your analytics?
+            Ready to get the insights you need?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join hundreds of agencies and businesses who trust MySiteMetrics 
-            to deliver beautiful analytics experiences to their clients.
+            Leverage My Site Metrics to unlock your data and gain the insights you need to take your business to the next level.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="https://uctkzjtr.manus.space" 
+              href={import.meta.env.VITE_DASHBOARD_URL || "https://your-dashboard.vercel.app"} 
               className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Start Free Trial
+              Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
-            <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-300">
-              Schedule Demo
-            </button>
           </div>
         </div>
       </section>
@@ -251,10 +244,10 @@ function App() {
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
+            <a href="https://mysitemetrics.io" className="flex items-center space-x-2 mb-4 md:mb-0 hover:opacity-80 transition-opacity">
               <BarChart3 className="h-8 w-8 text-blue-400" />
               <span className="text-xl font-bold">MySiteMetrics</span>
-            </div>
+            </a>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
@@ -267,8 +260,7 @@ function App() {
         </div>
       </footer>
     </div>
-  )
+   )
 }
 
 export default App
-
