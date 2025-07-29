@@ -37,7 +37,7 @@ function App() {
               <span className="text-gray-900">
                 Transform Your
               </span>
-                
+                <br />
 
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">Website Analytics</span>
             </h1>
